@@ -1,0 +1,14 @@
+class Country():
+    NumberOfCountries = 0
+    def __init__(self) -> None:
+        self.name = []
+        self.population = {}
+        Country.NumberOfCountries += 1
+    def add_name(self,name):
+        self.name.append(name)
+    def get_names(self):
+        return self.name
+    def add_population(self,year,population):
+        self.population[year]=population
+    def get_populations(self):
+        return self.population
